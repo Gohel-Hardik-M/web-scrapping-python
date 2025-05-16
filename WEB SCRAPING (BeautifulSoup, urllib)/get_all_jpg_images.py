@@ -17,6 +17,4 @@ def get_all_jpg_images(url):
             return None
     return images
 
-html = get_all_jpg_images("https://www.geeksforgeeks.org/python-urllib-module/")
-print(html)
 
