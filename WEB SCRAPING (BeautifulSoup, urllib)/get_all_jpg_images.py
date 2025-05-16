@@ -1,4 +1,4 @@
-from urllib import urlopen 
+from urllib.request import urlopen 
 from bs4 import BeautifulSoup 
 import re
 from urllib.error import HTTPError
@@ -15,6 +15,8 @@ def get_all_jpg_images(url):
         
         except AttributeError as e:
             return None
-        else : 
-            return [image["src"]  for image in images] 
+    return images
+
+html = get_all_jpg_images("https://www.geeksforgeeks.org/python-urllib-module/")
+print(html)
 
