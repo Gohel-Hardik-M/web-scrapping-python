@@ -15,5 +15,6 @@ def get_all_jpg_images(url):
         
         except AttributeError as e:
             return None
-    return images
+        else : 
+            return [image["src"]  for image in images] 
 
