@@ -18,3 +18,4 @@ def get_all_jpg_images(url):
     return images
 
 
+  
