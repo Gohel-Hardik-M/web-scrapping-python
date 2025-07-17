@@ -16,7 +16,7 @@ def getTitle(url):
         
       except AttributeError as e:
           return None
-    return title
+    return title  
 
 
         
